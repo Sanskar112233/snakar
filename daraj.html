@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 30px;
+            background-color: #ECECEC;
+            transition: ease-in 0.1s;
+        }
+        @media (max-width:390px){
+            .Navbar{
+                display: block;
+                height: 200px;
+            }
+        }
+
+        li {
+            list-style: none;
+            margin: 20px;
+
+        }
+
+        .navbarsecond {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        input {
+            width: 70%;
+            height: 40px;
+            border-style: none;
+            background-color: #F5F5F5;
+
+
+        }
+
+        .searchbar {
+            width: 50%;
+            padding: 5px;
+
+        }
+
+        .F {
+            color: orange;
+            font-size: 55px;
+            position: relative;
+            top: 23px;
+            right: 10px;
+
+        }
+
+        .G {
+            font-size: 40px;
+            position: relative;
+            top: 20px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Navbar">
+        <li class="A">Home</li>
+        <li class="B">Pages</li>
+        <li class="C">About</li>
+        <li class="D">Contact</li>
+        <li class="E">More</li>
+    </div>
+    <div class="navbarsecond">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Daraz_Logo.png/1200px-Daraz_Logo.png"
+            height="50px" alt="">
+        <div class="searchbar">
+            <input type="Text" placeholder="search">
+            <span class="iconify F" data-icon="fluent:search-square-24-filled"></span>
+            <span class="iconify G" data-icon="bx:cart"></span>
+           
+        </div>
+        <img src="https://icms-image.slatic.net/images/ims-web/c116120e-aea1-4350-9f1c-c0eab8783647.gif" alt=""
+        height="50px">
+    </div>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>

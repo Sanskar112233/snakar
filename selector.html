@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: blue;
+            font-size: 60px;
+        }
+        .divChild> h1{
+font-size: 20px;
+        }
+        .divsubchild> h1{
+            font-size: 40px;
+        }
+        .divDescendent> h1{
+            background-color:rgb(74, 74, 133);
+        }
+
+    </style>
+</head>
+<body>
+    <!--universal selector applies to all-->
+    <h2>universal selector</h2>
+    <!--child selector symbol = >-->
+    <div class="divChild">
+        <h1>i am child one</h1>
+        <p>i am also child</p>
+        <div class="divsubchild">
+            <h1>i am sub child</h1>
+        </div>
+    </div>
+    <div class="divDescendent">
+        <h1>i am super child</h1>
+        <h1>i am also super child</h1>
+        <div class="divSubdisc">
+            <h1>i am super child</h1>
+        </div>
+    </div>
+</body>
+</html>

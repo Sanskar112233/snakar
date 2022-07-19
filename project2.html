@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="./style4.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Browse</li>
+            <li><a href="">Newest</a></li>
+            <li>|</li>
+            <li><a href="">All</a></li>
+            <li class="list1"><a href="">Fashion</a></li>
+            <li class="list1"><a href="">Shopping</a></li>
+            <li class="list1"><a href="">Health and beauty</a></li>
+            <li class="list1"><a href="">Miscellaneous</a></li>
+            <li class="list1"><a href="">Technology</a></li>
+            <li class="list1"><a href="">Entertainment</a></li>
+        </ul>
+    </div>
+
+    <div class="background">
+        <div class="intro">
+            <h1>Save on Shopify themes and templates.</h1>
+            <button>Browse on sales themes</button>
+        </div>
+
+        <div class="card">
+            <div class="img4"></div>
+            <!-- <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        /> -->
+            <div class="test">
+                <div class="icons">
+                    <span class="iconify" data-icon="fluent:collections-20-filled"></span>
+                    <span class="iconify" data-icon="ps:lovedsgn"></span>
+                </div>
+                <h2>Vendy - Multipurpose Shopify theme for...</h2>
+                <p>by <a href="">Zemez</a> in fashion</p>
+                <h3><del>$48</del> $60</h3>
+
+                <div class="card1">
+                    <div class="div1">
+                        <p>⭐⭐⭐⭐⭐(18)</p>
+                        <p>694 sales</p>
+                    </div>
+
+                    <div class="div2">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                        <button>Live Preview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <!-- background -->
+            <div class="img4"></div>
+            <!-- <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        /> -->
+            <!-- box-shadow -->
+            <div class="test">
+                <div class="icons">
+                    <span class="iconify" data-icon="fluent:collections-20-filled"></span>
+                    <span class="iconify" data-icon="ps:lovedsgn"></span>
+                </div>
+                <h2>Vendy - Multipurpose Shopify theme for...</h2>
+                <p>by <a href="">Zemez</a> in fashion</p>
+                <h3><del>$48</del> $60</h3>
+
+                <div class="card1">
+                    <div class="div1">
+                        <p>⭐⭐⭐⭐⭐(18)</p>
+                        <p>694 sales</p>
+                    </div>
+
+                    <div class="div2">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                        <button>Live Preview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img4"></div>
+            <!-- <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJwA6gMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIDBQYEB//EADoQAAEEAQIDBgQEAwgDAAAAAAEAAgMEEQUSBiExEzJBUWFxBxQigUKRobEkM9EWcnOCksHh8BUjYv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD6ygITCCQUkgmgaYSTCBhNJMIG1NJMIBAQgIGmhCBhASTCBppJoBNJAQNCEIBNJNAIQhAIQhAJpJ5QZikAohSBx7IJDkmEgQR1ynkIGmkOZwpEbeRQCaXgmgkEICEAmkmgaEgmgEwkmEDTSQEDQEICBoQhAIQhA0JJoBCEIBCEIM1EkbZYnxvGWvaWkehTUm+CDnKeoz1acVZwD3Qt7Le7mXY5f7LKtcdwMvy6fG+SS3ECXwwQF7mjz/Ve+1Hst2GcuUh/Xmvm87bdX4sPbSMTJbVTvSNJb0z0HXuoO50fiqHXYpJKNuQ9k7bIx7SxzD6g9F3FVxdViLu9t55XznQuFmaXV1AyTOsWr259iTG3JOeQHh1XR0tZmjowxOY172sa3efxYHVB0+QmHDIz0Xz6f4jacx8zW2y/sP5xgrSSCPr3iGkDofyWhpuvDV6kNqleEkE7gxjwSAST08wfRB2mMFCqgLxCwSnLw3DlPcgkmk05cB5qXQoEmhCATCSEEkIHRAQNCEIGhJNAIQhAIQhA0JIQNCEIMCTUq0QzJOxvuQFl3uNtAoA/NanXaR4bwSsA/DytZ53LlmTPUbyMq+D4X8Ls5yU3ynzfK4fsQg9Wn6zQ4gdPc0yQywh+3cWlv1Aeq9TKFV1ptl8EXzAGBIR9QHlle3R+G9D0aN0enUIYWvOXcy7J9cla7ZK0LeQiYPYBBmR1t4w0E59CsPYYnmNwwWuIIXR3OJdIoD+K1Cuz03An8gsCK5V1SSa3TkEkMkhLHYxnzQfG23NV0u9xXDpVaOVhfmwSDuY0kjIH+Yr6JwWdIfwnWOgveYYJGvcJCN7ZA4Eh3r+i6CnpFCvZnsx1IY5rAxNIGjc/3K98tSKPT5mwRta0Rk4Y3y5+CDyz8Q2Io3PfIxjWjLnEYAHusOb4gN+V+bEtj5TOPmGQHZ1xnPl6rA+ITLM/DNplTcSC0va3qWg81VFqFKTgcSbmCv8AJbC3I+k7cbffKDsotfnlrC7XtGeLbvaWP5OC7arfitVIrDZGhj2BwyeYXxrgGrZrcKNitNc1zw97WO5ENK7Osc1I+ePpCDsn6hWZ3p2fYqh2sVWnkXOPoMLguK55q/DGpzVpXwzR13OY9hwQR5FHAuoOfomhzXSbAnZiV8p3EnzJ6lB9NgmbYhbKwENdz5qxeH5yrAwNEjA0eDVVJrFRgzuc72CDUBz0Qsdutxl7RHE459VrghBJCW4IacnCBppJoBCEIBCEIBCEIBNJCDDe9wH0heOeS0c9n19VpBqNjT4BBzc1TVZyQLGxp8l5X8JTWj/F6hO5p8GuwuuxjwCqle4D6UHMw/D7RB/ObLIfEmQhbemaBpGlwmKrAGMJyQXk8/zVdl1pwxGcLJtadqNnrO4exQdM65pNIbnyV48ePLksbVePeH69eaETyTOcwtxEzIGeXU4WIeEGznNl73n1cVP+xembcSRMI9Qgwxfjx3wMjrlUQ1tJdP2wrVBNnO8MbnK6hmiaBTA7SGMgeim/WNCoD+Gotef/AJjCDMNKS6IDUnAdHKHvAJ+tuCCOS0am75aMEEEDmD4LxWeOdckYW6PooYPAuic4n7DAXu0NmpXKMcl2lKy07nIC3HP80GZrdHWdSq3dPrxUflrUXZtmfK4PYCMOJaGnPpzC9um6M3RNI0ykyQyCuC0vI7xI5nHgujrULJI/9TW+rnf0RrNJ0dRkj5GZY7OG/wBUHMcSWZq2g6hPXkdHNHA9zHt6ggdVy/BVqK/plO1dGqW7rnfU8CUsaQevg3C6rVqzr+l26kbmtdPC5jXHoCRhZfDPD+saPRgof+TqdhEfwVHFx8SMl+P0QdHJNPVt1Jq/4ZMuGcAjyK6V2s129GvJ+wXOXmlj62em4n7ry63ddp2j3rrGh7q9d8rWnoS1uQg3b/FlOlj5iSGHd07WTBKjX4gddhbPTkhkid3ZIzuB9iuD+GcHzWjP1S475i/ald20z/qPIkADyHp6rq7UTIqEor7YwByLOWDnn+qDtoXF0Mbn94tyVPcAsDS9ZDtPiNppE4GHY6H1UrPEEEDdzwxg85HgBBuF/op+APmuPh4qZde9lGevIWd7snbtq3NDszTxSOsPzzACDUQol4CiZPIILEKLXZOCpIBCSaDLCaipBAI2jyQmEEdjfIJ7B5KfimEHndHlUSU9/U8l708IMZ2jQPOXs3e6sj0yrD3YY/8ASFpkKt7N3RB598EAO7DQF4rGv1aw6Fx8AF7JaQk73RVDSYM5Lc+6DCt8W3njbp+nuccjDi31WLNY4w1GeF0zJOxDsyR7msbj/uV3rKkMY5NA9lF80UA7vRBh19M1CQDMTGg9dzv+Fq1dFsDBklYP7rcrzWdeMQIggLneyx7mp8S3hsqNbC0/izgoNzXKUcEULpJsvDuQPL9Oq8LomSsdHK0OY4bXNcMghc1Dwnr9jUIbk92PfG/ce03Pz6FdlX0W07+daA/w2f1JQc7pXB9PTxJFQs369eV250Edghv28R9iFr2aMVLShXqx9nCz8LW5HXJyfPP5rer6PE0DtJpXn1dj9lPU61aLTpCWDwySUHMwcoWD0XF/FalT/sxZumrCbe6NgnLAXgbhyB8PFdowtI+kjHhheLXtDr8Q6caFx8jYS8OPZnB5HOOYQHCsHZcN6VGQMtpxA++wLQ4ftzVtVnY0l9eQkuaT3SPEL1U6Ta9WOGLuRMDG+wGAvFogJtyuPXHP3QdQbw/CwrFn4w05spjZZfLh+xxrV5JmsdnGC5gIB9yq+IaVrUdEvU6E4gszwuZHKSRtJ9R08l88q6jxrwPX0ujfp0LNB8zasQgP1HPhy59M+CD65FLI+Vo3u68/BbCyKDd07MgA9cLXQJCEIMsJ5UAU8oJoSCeUEsphRQgkmOSWUIJdUY5ICaBYSIU0kFLo8qp1Rr+oXswjCDwjT4gc7APsrmQMZ+EL0FVvGUEHSRxDPJeKzrUVcHA3YXpkgD+pK8502Inm0FBz+ocV6i/Mem1XF3mQuZ1HT+LtbBMszm7ugMm1rfsvpcdKKPo0BW7WRjog5jSdH1IVYmWOxa9rQHFriVt1tFcMGWy4+jGgfvlXT6hHA3PUrE1DiO0MtpQOe8+iDpo6NWCMvcS7A5l8hx+XRcvo0sckknZuadvXB9VzOo0OJdddieTbHnkxz8ALW4S4Y1PSYpo5rURbI7IDWnLfug3dQqRajWdWmknY0kHdBK6NwIOR9QVNTR6Fey20/trNlndntzulcz+7uOG/YLSh0fdzmne4+nJe+DTasfMRNLh4u+r90Hj0mGd+rz2e2BqdgxjIwe68F5cfuCz8luKAwBgckZQSQoZRlBktKmqgcKQKCwFNVgqTSgsTChlGUE0ZUdyeUEsp5UQUwUEwU1AKWUEghRzhPcgaMIyhAYCMBCaCDgqXx7hgr0owgznUWOPNSj0+JvRgXvATAQUx12txgDkrmsATUgUDATSyjKB5RlLKWUEkKOUZQZAKecKlrlPKC0FMOVQKkCgtBQCobkAoLAVIFVhPKC3KAoAoBQWZRlRynlBLKYKgmgsBRlVgqWUE8oyoZTBQTQo7kAoJoUcp5QSyjKjlGUEwUZUcoygllMFQyjKCWU1BGUGGCptcqASpNJQXZTDlUCpILg5MFU5U2nkgtDlLKqCZKCwOT3KoFSCCzcnuVRKeUFwKeVWCjKCzKeVXlMILAUZUEwgmgFRygFBLKeVDKMoJ5Ke5QyjKCzcnlVgoygnuT3clWjKC3IS3KvJRlB//2Q=="
+          alt=""
+        /> -->
+            <div class="test">
+                <div class="icons">
+                    <span class="iconify" data-icon="fluent:collections-20-filled"></span>
+                    <span class="iconify" data-icon="ps:lovedsgn"></span>
+                </div>
+                <h2>Vendy - Multipurpose Shopify theme for...</h2>
+                <p>by <a href="">Zemez</a> in fashion</p>
+                <h3><del>$48</del> $60</h3>
+
+                <div class="card1">
+                    <div class="div1">
+                        <p>⭐⭐⭐⭐⭐(18)</p>
+                        <p>694 sales</p>
+                    </div>
+
+                    <div class="div2">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                        <button>Live Preview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--next div-->
+    <div class="containerProduct">
+        <div class="containerFirst">
+            <h2>Weekly bestsellers</h2>
+            <button>View all</button>
+        </div>
+        
+        <div class="productName">
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+        </div>
+        <div class="productName row1">
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+        </div>
+        <div class="productName">
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+        </div>
+        <div class="productName">
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+            <div class="productcardMain">
+                <div class="productbackground"></div>
+                <div class="productBackgroundStart">
+                    <h2>Ella - Multipurpose Shopify Theme OS 2.0</h2>
+                <p>by halothemes in Fashion</p> 
+                <div class="divIcons">
+                    <div class="divIcon1">
+                        <h4>
+                            $48
+                        </h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="buttonIcon">
+                        <i class="fa-solid fa-cart-shoppinf cart"></i>
+                        <button>live preview</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>

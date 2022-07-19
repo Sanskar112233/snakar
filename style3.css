@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: rgb(87, 11, 11);
+    display: flex;
+    justify-content: centre;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 30px;
+    margin: 0 30px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.introduction {
+    background-image: url(https://media1.popsugar-assets.com/files/thumbor/_vcrWNC5VK8yi-7hVwqoCGcBKT4/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2022/06/21/967/n/44498184/tmp_0zuAq3_5e3ffb2782cc4f95_TCDSTTH_ZX064.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.intro-text {
+    width: 50%;
+}
+
+.intro-text h1 {
+    color: white;
+}
+
+.intro-text p {
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.intro-left-icons .facebook {
+    color: blueviolet;
+    font-size: 40px;
+  
+}
+
+.intro-left-icons .instagram {
+    color: white;
+    font-size: 40px;
+  
+}
+
+.intro-left-icons .linkedin {
+    color: white;
+    font-size: 40px;
+    
+}
+
+.intro-left-icons .twitter {
+    color: white;
+    font-size: 40px;
+    
+}
+
+.intro-left-icons .whatsapp {
+    color: white;
+    font-size: 40px;
+    
+}
+.iconify{
+margin: 0 20px;
+margin-bottom: 30px;
+transition: ease-in 0.2s;
+}
+.iconify:hover{
+    transform: translateY(-10px);
+}
+.intro-right {
+    width: 60%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-right img {
+    box-shadow: 15px 15px 25px rgb(39, 11, 11);
+    height: 450px;
+    width: 450px;
+    border-radius: 80%;
+}
+.left-contact{
+    margin-left: -200px;
+}
+button{
+    border: none;
+    margin: 0px 10px 0px 0px;
+}
+.downloadbtn{
+    background-color: rgb(51, 51, 137);
+    padding: 7px;
+    color: white;
+}
+.contact{
+    background-color: red;
+    padding: 7px;
+    color: white;
+}
+.projectcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projectcard{
+    height: 350px;
+    width: 400px;
+    margin: 2%;
+   overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgb(177, 145, 145);
+    transition: ease-in 0.5s;
+}
+.projectcard img{
+    margin-bottom: 30px;
+}
+.projectcard h3{
+    margin-bottom: 30px;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: ease-in 5s;
+}
+@keyframes colorChange{
+    0%{
+        background-color: green;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: orange;
+    }
+    75%{
+        background-color: pink;
+    }
+}
+.projectcard:hover{
+transform: scaleY(1.1);
+}
+.contact2{
+    background-color: grey;
+    height: 100vh;
+}
+ form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.input1{
+    font-size: 30px;
+    width: 30%;
+    margin-top: 100px;
+}
+.input2{
+    font-size: 30px;
+    width: 30%;
+    margin-top: 30px;
+}
+textarea{
+    margin-top: 20px;
+}
+button{
+    background-color: green;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}

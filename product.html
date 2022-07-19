@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 350px;
+            box-shadow: 10px 10px 5px black;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          position: relative;
+
+        }
+        .main::after{
+            content: '20% OFF';
+            display: block;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            width: 70%;
+            top:17px;
+            left: 150px;
+            position: absolute;
+            transform: rotate(30deg);
+            text-align: center;
+        }
+      img{
+        position: relative;
+        display: block;
+        transition: 3s;
+      }  
+     img:hover{
+        transform: scale(1.1);
+
+     }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw6e271bdc/assets/Y0998004/Y0998004_C099600455_E01_GHC.jpg?sw=715&sh=773&sm=fit" alt=""
+        height="500px"
+        width="370px">
+
+        <h1>Product Name</h1>
+        <p>Rs. 2000</p>
+    </div>
+</body>
+</html>

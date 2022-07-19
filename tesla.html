@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Cars, Solar & Clean Energy</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .main {
+            height: 100vh;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/6139697c-9d6a-4579-837e-a9fc5df4a773/bvlatuR/std/1200x628/Model-3-Homepage-Social-LHD);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .ul>li {
+            list-style: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .tesla {
+            margin: 0px 0px 0px 40px;
+            flex-grow: 2;
+        }
+
+        .S {
+            flex-grow: .3;
+        }
+
+        .E {
+            flex-grow: .3;
+
+        }
+
+        .X {
+            flex-grow: .3;
+        }
+
+        .Y {
+            flex-grow: .3;
+
+        }
+
+        .Roof {
+            flex-grow: .3;
+        }
+
+        .Panel {
+            flex-grow: 1;
+        }
+
+        .shop {
+            flex-grow: .2;
+        }
+
+        .account {
+            flex-grow: .2;
+        }
+
+        .menu {
+            flex-grow: 0.09;
+        }
+
+        .head {
+            font-size: 40px;
+            text-align: center;
+            padding-top: 40px;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        ol {
+            list-style: none;
+            text-align: center;
+            font-size: 17px;
+            font-family: Tahoma, sans-serif;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .touch {
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+
+        .div2 {
+
+            padding-top: 490px;
+            display: flex;
+            box-sizing: border-box;
+            font-size: 12px;
+            font-weight: bolder;
+
+        }
+
+        @media(max-width:600) {
+            .div2 {
+                display: block;
+                width: 200px;
+            }
+        }
+
+        @media(max-width:680) {
+            .div2 {
+                padding-top: 0;
+            }
+        }
+
+        @media (max-width:1500px) {
+            .main {
+                height: 100vh;
+                background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/6139697c-9d6a-4579-837e-a9fc5df4a773/bvlatuR/std/1200x628/Model-3-Homepage-Social-LHD);
+                background-size: 5%, cover;
+                background-repeat: no-repeat;
+                position: relative, fixed;
+            }
+        }
+
+
+        .customer {
+            border-radius: 25px;
+            background-color: #413F42;
+            color: #e6dddd;
+            height: 40px;
+            width: 250px;
+            margin-left: 500px;
+            border: none;
+            font-family: Helvetica, sans-serif;
+
+        }
+
+        .existing {
+            border-radius: 25px;
+            background-color: #e6dddd;
+            color: #413F42;
+            height: 40px;
+            width: 250px;
+            margin-left: 20px;
+            border: none;
+            font-family: Helvetica, sans-serif;
+
+        }
+
+        @media(max-width:1496) {
+            ol {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .ex {
+            font-size: 15px;
+            text-align: center;
+            color: #1d5144;
+            padding: 15px;
+            font-family: Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+
+        @media (max-width:1500px) {
+            .main {
+                background-position: center;
+                height: 200vh;
+                width: 100vw;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+        }
+
+        @media(max-width:685px) {
+            .main {
+                background-position: center;
+                height: 200vh;
+                width: 100vw;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+
+            }
+            .div2{
+                padding-top: 0px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bolder;
+            position: relative;
+            top: 300px;
+            right: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="ex">Read Tesla's 2021 Impact Report</h1>
+    <div class="main">
+
+        <ul>
+            <li class="tesla"></li>
+            <li class="S">Model S</li>
+            <li class="E">Model 3</li>
+            <li class="X">Model X</li>
+            <li class="Y">Model Y</li>
+            <li class="Roof">Solar Roof</li>
+            <li class="Panel">Solar Panels</li>
+            <li class="shop">Shop</li>
+            <li class="account">Account</li>
+            <li class="menu">Menu</li>
+        </ul>
+        <h1 class="head">Model 3</h1>
+        <ol>
+            <li class="orders"> Order online for </li>
+            <li class="touch">Touchless delivery</li>
+        </ol>
+        <div class="div2">
+            <button class="customer">CUSTOMER ORDER</button>
+            <br>
+            <button class="existing">EXISTING INVENTORY</button>
+        </div>
+    </div>
+</body>
+
+</html>
